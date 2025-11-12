@@ -2,17 +2,13 @@
   "name": "whatsapp-api",
   "version": "1.0.0",
   "scripts": {
-    "build": "npm run db:generate && npm run db:deploy",
-    "start": "npm run start:prod",
-    "start:prod": "node dist/src/main.js",
-    "db:generate": "prisma generate",
-    "db:deploy": "prisma migrate deploy"
+    "start": "node -e \"require('@evolution-api/evolution-api').start()\"",
+    "build": "echo 'No build needed'"
   },
   "dependencies": {
-    "@evolution-api/api": "^2.1.1"
+    "@evolution-api/evolution-api": "^2.1.1"
   },
-  "devDependencies": {
-    "@prisma/client": "^5.0.0",
-    "prisma": "^5.0.0"
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
