@@ -3,8 +3,8 @@
     "builder": "DOCKERFILE"
   },
   "deploy": {
-    "startCommand": "node dist/src/main.js",
-    "restartPolicyType": "ON_FAILURE",
+    "startCommand": "",
+    "restartPolicyType": "ALWAYS",
     "restartPolicyMaxRetries": 10
   }
 }
