@@ -1,0 +1,25 @@
+# render.yaml
+services:
+  - type: web
+    name: evolution-api
+    env: docker
+    docker:
+      dockerfilePath: ./Dockerfile
+    plan: free
+    envVars:
+      - key: SERVER_PORT
+        value: 8080
+      - key: SERVER_HOST
+        value: 0.0.0.0
+      - key: LOG_LEVEL
+        value: error
+      - key: CONFIG_SESSION_PHONE_CLIENT
+        value: firefox
+      - key: CONFIG_SESSION_PHONE_NAME
+        value: Firefox
+      - key: CONFIG_WEBHOOK_GLOBAL_ENABLED
+        value: "false"
+      - key: CONFIG_RABBITMQ_ENABLED
+        value: "false"
+      - key: CONFIG_REDIS_ENABLED
+        value: "false"
