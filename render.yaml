@@ -1,4 +1,3 @@
-# render.yaml
 services:
   - type: web
     name: evolution-api
@@ -8,15 +7,15 @@ services:
     plan: free
     envVars:
       - key: SERVER_PORT
-        value: 8080
+        value: "8080"
       - key: SERVER_HOST
-        value: 0.0.0.0
+        value: "0.0.0.0"
       - key: LOG_LEVEL
-        value: error
+        value: "error"
       - key: CONFIG_SESSION_PHONE_CLIENT
-        value: firefox
+        value: "firefox"
       - key: CONFIG_SESSION_PHONE_NAME
-        value: Firefox
+        value: "Firefox"
       - key: CONFIG_WEBHOOK_GLOBAL_ENABLED
         value: "false"
       - key: CONFIG_RABBITMQ_ENABLED
